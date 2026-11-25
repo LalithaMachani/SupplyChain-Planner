@@ -155,3 +155,21 @@ See [`docs/KNOWN_LIMITATIONS.md`](docs/KNOWN_LIMITATIONS.md) and [`docs/VALIDATI
 - Never commit `.env`, credentials, database dumps, or private customer data.
 - `.env.example` contains placeholder local-development values; replace them before use.
 - Use a dedicated development database, not a production database.
+
+
+## 📸 Application Screenshots
+
+### 1. Dashboard Overview
+![Dashboard Overview](screenshots/overview.png)
+
+### 2. Data Ingestion
+![Data Ingestion](screenshots/Data%20ingestion.png)
+
+### 3. Inventory Management
+![Inventory Management](screenshots/Inventory.png)
+
+### 4. Shortage Analysis
+![Shortage Analysis](screenshots/shortage_analysis.png)
+
+### 5. Mitigation Planning
+![Mitigation Planning](screenshots/Mitigation.png)
