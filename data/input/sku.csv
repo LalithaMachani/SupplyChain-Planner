@@ -1,0 +1,25 @@
+sku_id,sku_code,name,category,base_uom_id,base_uom_code,status
+1,SKU-000001,Industrial item 000001,components,1,EA,active
+2,SKU-000002,Industrial item 000002,packaging,1,EA,active
+3,SKU-000003,Industrial item 000003,electrical,3,KG,active
+4,SKU-000004,Industrial item 000004,fasteners,3,KG,active
+5,SKU-000005,Industrial item 000005,materials,5,L,active
+6,SKU-000006,Industrial item 000006,components,5,L,active
+7,SKU-000007,Industrial item 000007,packaging,1,EA,active
+8,SKU-000008,Industrial item 000008,electrical,1,EA,active
+9,SKU-000009,Industrial item 000009,fasteners,3,KG,active
+10,SKU-000010,Industrial item 000010,materials,3,KG,active
+11,SKU-000011,Industrial item 000011,components,5,L,active
+12,SKU-000012,Industrial item 000012,packaging,5,L,active
+13,SKU-000013,Industrial item 000013,electrical,1,EA,active
+14,SKU-000014,Industrial item 000014,fasteners,1,EA,active
+15,SKU-000015,Industrial item 000015,materials,3,KG,active
+16,SKU-000016,Industrial item 000016,components,3,KG,active
+17,SKU-000017,Industrial item 000017,packaging,5,L,active
+18,SKU-000018,Industrial item 000018,electrical,5,L,active
+19,SKU-000019,Industrial item 000019,fasteners,1,EA,active
+20,SKU-000020,Industrial item 000020,materials,1,EA,active
+21,SKU-000021,Industrial item 000021,components,3,KG,active
+22,SKU-000022,Industrial item 000022,packaging,3,KG,active
+23,SKU-000023,Industrial item 000023,electrical,5,L,active
+24,SKU-000024,Industrial item 000024,fasteners,5,L,active

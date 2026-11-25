@@ -1,0 +1,8 @@
+shipment_id,purchase_order_number,promised_arrival_date,simulated_actual_arrival_date,delay_days,shipment_status
+ASN-EDGE-DUP-001,,2026-01-13,2026-01-18,5,in_transit
+ASN-00000018,PO-00000018,2026-08-12,2026-08-12,0,partially_received
+ASN-00000020,PO-00000020,2026-11-05,2026-11-05,0,partially_received
+ASN-00000025,PO-00000025,2026-12-09,2026-12-09,0,partially_received
+ASN-00000027,PO-00000027,2026-06-06,2026-06-06,0,partially_received
+ASN-00000031,PO-00000031,2026-03-09,2026-03-09,0,partially_received
+ASN-00000032,PO-00000032,2026-02-25,2026-02-25,0,partially_received

@@ -1,0 +1,9 @@
+supplier_id,supplier_code,name,status,default_currency
+1,SUP-0001,Supply partner 0001,active,USD
+2,SUP-0002,Supply partner 0002,active,EUR
+3,SUP-0003,Supply partner 0003,active,CAD
+4,SUP-0004,Supply partner 0004,active,GBP
+5,SUP-0005,Supply partner 0005,active,USD
+6,SUP-0006,Supply partner 0006,active,EUR
+7,SUP-0007,Supply partner 0007,active,CAD
+8,SUP-0008,Supply partner 0008,active,GBP

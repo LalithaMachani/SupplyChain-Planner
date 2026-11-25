@@ -1,0 +1,5 @@
+location_id,location_code,name,location_type,country_code,time_zone,status
+1,LOC-001,Planning site 001,warehouse,US,America/Chicago,active
+2,LOC-002,Planning site 002,factory,CA,America/Los_Angeles,active
+3,LOC-003,Planning site 003,store,MX,America/Toronto,active
+4,LOC-004,Planning site 004,distribution_center,DE,Europe/Berlin,active

@@ -1,0 +1,6 @@
+case_id,expected_rule,expected_outcome
+duplicate_inbound_inventory,DUPLICATE_INBOUND,Staging should flag both rows as duplicate business identifiers. Do not count both quantities; the current validator warns that operational quantity reconciliation is not implemented.
+unapproved_substitute,UNAPPROVED_SUBSTITUTE,Reject the substitution for the requested date and never recommend SKU-000002 as an approved substitute.
+supplier_capacity_exceeded,CAPACITY_EXCEEDED,The PO is over the recorded capacity. The current ingestion validator reports capacity verification as unsupported; planning must not treat the excess as validated firm supply.
+shortage_missing_lead_time,MISSING_LEAD_TIME,No arrival date can be inferred for PO-00000001. Keep the 40 base-unit week-one demand shortage visible until supported supply timing exists.
+uom_mismatch,UOM_MISMATCH,Reject the row because SKU-000001 is EA-based and has no KG conversion; do not infer a base-unit quantity.

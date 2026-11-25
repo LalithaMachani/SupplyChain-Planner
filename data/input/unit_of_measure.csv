@@ -1,0 +1,7 @@
+uom_id,code,dimension,decimal_places,is_active
+1,EA,count,0,true
+2,CASE,count,0,true
+3,KG,mass,3,true
+4,LB,mass,3,true
+5,L,volume,3,true
+6,ML,volume,0,true

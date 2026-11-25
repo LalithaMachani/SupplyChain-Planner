@@ -1,0 +1,2 @@
+inventory_snapshot_id,snapshot_key,captured_at,ledger_watermark,source_name,source_checksum,snapshot_status
+1,SYNTHETIC-INV-2026-01-05,2026-01-05T00:00:00+00:00,0,synthetic-generator,4f177d2c990496c0a3685096c119495372c71fffa5615fbc6698faee113fb3fe,validated

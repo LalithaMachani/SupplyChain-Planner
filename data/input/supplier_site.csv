@@ -1,0 +1,9 @@
+supplier_site_id,supplier_id,supplier_code,site_code,name,country_code,time_zone,status
+1,1,SUP-0001,SITE-0001-01,Ship-from site 0001,US,America/Chicago,active
+2,2,SUP-0002,SITE-0002-01,Ship-from site 0002,CA,America/Los_Angeles,active
+3,3,SUP-0003,SITE-0003-01,Ship-from site 0003,MX,America/Toronto,active
+4,4,SUP-0004,SITE-0004-01,Ship-from site 0004,DE,Europe/Berlin,active
+5,5,SUP-0005,SITE-0005-01,Ship-from site 0005,PL,Europe/Warsaw,active
+6,6,SUP-0006,SITE-0006-01,Ship-from site 0006,JP,Asia/Tokyo,active
+7,7,SUP-0007,SITE-0007-01,Ship-from site 0007,CN,Asia/Shanghai,active
+8,8,SUP-0008,SITE-0008-01,Ship-from site 0008,US,America/Chicago,active

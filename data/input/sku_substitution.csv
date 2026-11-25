@@ -1,0 +1,3 @@
+source_sku_code,substitute_sku_code,effective_date,conversion_factor,status
+SKU-000001,SKU-000002,2026-01-05,1,active
+SKU-000007,SKU-000008,2026-01-05,1,active

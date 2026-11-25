@@ -1,0 +1,102 @@
+{
+  "cases": [
+    {
+      "affected_records": [
+        {
+          "business_key": "ASN-EDGE-DUP-001|1",
+          "data_row": 1,
+          "file": "input/inbound_shipment_lines.csv"
+        },
+        {
+          "business_key": "ASN-EDGE-DUP-001|1",
+          "data_row": 2,
+          "file": "input/inbound_shipment_lines.csv"
+        }
+      ],
+      "case_id": "duplicate_inbound_inventory",
+      "expected_outcome": "Staging should flag both rows as duplicate business identifiers. Do not count both quantities; the current validator warns that operational quantity reconciliation is not implemented.",
+      "expected_rule": "DUPLICATE_INBOUND",
+      "title": "Repeated inbound shipment line can be counted twice"
+    },
+    {
+      "affected_records": [
+        {
+          "business_key": "SKU-000001 -> SKU-000002",
+          "data_row": 1,
+          "file": "input/sku_substitution.csv"
+        }
+      ],
+      "case_id": "unapproved_substitute",
+      "expected_outcome": "Reject the substitution for the requested date and never recommend SKU-000002 as an approved substitute.",
+      "expected_rule": "UNAPPROVED_SUBSTITUTE",
+      "title": "Substitution is active but has no effective approval"
+    },
+    {
+      "affected_records": [
+        {
+          "business_key": "SUP-0001|SKU-000001",
+          "capacity_quantity": "25",
+          "data_row": 1,
+          "file": "input/supplier_capacity.csv"
+        },
+        {
+          "business_key": "PO-00000002",
+          "data_row": 2,
+          "file": "input/purchase_order_lines.csv",
+          "ordered_quantity": "100",
+          "uom_code": "CASE"
+        }
+      ],
+      "case_id": "supplier_capacity_exceeded",
+      "expected_outcome": "The PO is over the recorded capacity. The current ingestion validator reports capacity verification as unsupported; planning must not treat the excess as validated firm supply.",
+      "expected_rule": "CAPACITY_EXCEEDED",
+      "title": "Released order quantity exceeds the supplier's SKU capacity"
+    },
+    {
+      "affected_records": [
+        {
+          "business_key": "PO-00000001",
+          "data_row": 1,
+          "file": "input/purchase_order_lines.csv"
+        },
+        {
+          "business_key": "SKU-000001|LOC-001",
+          "data_row": 2,
+          "file": "input/inventory.csv"
+        },
+        {
+          "business_key": "SKU-000001|LOC-001|2026-01-05",
+          "data_row": 1,
+          "file": "input/forecast_demand_0001.csv"
+        }
+      ],
+      "case_id": "shortage_missing_lead_time",
+      "expected_outcome": "No arrival date can be inferred for PO-00000001. Keep the 40 base-unit week-one demand shortage visible until supported supply timing exists.",
+      "expected_rule": "MISSING_LEAD_TIME",
+      "missing_lead_time_key": {
+        "location_code": "LOC-001",
+        "sku_code": "SKU-000001",
+        "supplier_code": "SUP-0001"
+      },
+      "title": "Demand exceeds zero opening inventory with no supplier lead-time row"
+    },
+    {
+      "affected_records": [
+        {
+          "business_key": "SKU-000001|LOC-001",
+          "data_row": 1,
+          "file": "input/inventory.csv",
+          "quantity": "10",
+          "uom_code": "KG"
+        }
+      ],
+      "case_id": "uom_mismatch",
+      "expected_outcome": "Reject the row because SKU-000001 is EA-based and has no KG conversion; do not infer a base-unit quantity.",
+      "expected_rule": "UOM_MISMATCH",
+      "title": "Inventory quantity uses a unit without a SKU conversion"
+    }
+  ],
+  "generator": "supplychain-planner-synthetic-data",
+  "profile": "starter",
+  "seed": 20261022
+}

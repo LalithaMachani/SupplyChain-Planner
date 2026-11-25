@@ -1,0 +1,185 @@
+{
+  "counts": {
+    "actual_demand_rows": 4992,
+    "forecast_demand_rows": 4992,
+    "forecast_weeks": 52,
+    "inventory_input_rows": 97,
+    "inventory_positions": 96,
+    "locations": 4,
+    "purchase_order_lines": 40,
+    "purchase_orders": 40,
+    "skus": 24,
+    "supplier_capacity_records": 48,
+    "supplier_lead_time_records": 191,
+    "supplier_sku_eligibilities": 48,
+    "suppliers": 8
+  },
+  "edge_cases_manifest": "ground_truth/edge_cases.json",
+  "files": [
+    {
+      "classification": "documentation",
+      "format": "markdown",
+      "path": "data_dictionary.md",
+      "row_count": null,
+      "sha256": "89a18266db80c7027aa72f6d222a489edb472402473d7f87f28d0be1d2bedc94"
+    },
+    {
+      "classification": "ground_truth",
+      "format": "csv",
+      "path": "ground_truth/actual_demand_0001.csv",
+      "row_count": 4992,
+      "sha256": "1417d1d463a59b8f27df292001db50c3e1d61a5ec0e00084616cd6394c597073"
+    },
+    {
+      "classification": "ground_truth",
+      "format": "csv",
+      "path": "ground_truth/edge_case_expected_outcomes.csv",
+      "row_count": 5,
+      "sha256": "a9896614e50a992edd00522e97ecbccd82205d4fcb393f35c024cc9af49e0456"
+    },
+    {
+      "classification": "ground_truth",
+      "format": "json",
+      "path": "ground_truth/edge_cases.json",
+      "row_count": 5,
+      "sha256": "4fe3b0765112f2c30b356c3f63d1c473e865a5fdb34b740f95d199088915b476"
+    },
+    {
+      "classification": "ground_truth",
+      "format": "csv",
+      "path": "ground_truth/transport_outcomes.csv",
+      "row_count": 7,
+      "sha256": "296f67d7db7ae4743e90b2b8c6ca1674c1a3d88e7e4d1b34e64d0490cc84c675"
+    },
+    {
+      "classification": "input",
+      "format": "csv",
+      "path": "input/forecast_demand_0001.csv",
+      "row_count": 4992,
+      "sha256": "3afbd135aab7952019c89ad092ad18a090da39e4244a280fa06fdd714e2cf2af"
+    },
+    {
+      "classification": "input",
+      "format": "csv",
+      "path": "input/inbound_shipment_lines.csv",
+      "row_count": 8,
+      "sha256": "a99e79f1892de10fcc95dc68ee970db57ad80153cfc456208c5531868b0445e0"
+    },
+    {
+      "classification": "input",
+      "format": "csv",
+      "path": "input/inbound_shipments.csv",
+      "row_count": 7,
+      "sha256": "6d2e9532036fd2a36cca98b2b08105b5afd6118732abb1ff694d852e852cb966"
+    },
+    {
+      "classification": "input",
+      "format": "csv",
+      "path": "input/inventory.csv",
+      "row_count": 97,
+      "sha256": "4f177d2c990496c0a3685096c119495372c71fffa5615fbc6698faee113fb3fe"
+    },
+    {
+      "classification": "input",
+      "format": "csv",
+      "path": "input/inventory_snapshot.csv",
+      "row_count": 1,
+      "sha256": "f065f69a770a4a49ed0fea2f7bb734ffebc5f1c5ad8593cab62b0cc60a8434e6"
+    },
+    {
+      "classification": "input",
+      "format": "csv",
+      "path": "input/location.csv",
+      "row_count": 4,
+      "sha256": "df22d20b9170b9f0c905fce298438d2ad1fe3c5d49394e08e71d3438f5f59722"
+    },
+    {
+      "classification": "input",
+      "format": "csv",
+      "path": "input/purchase_order_lines.csv",
+      "row_count": 40,
+      "sha256": "8750b683fed9d52033e1bb4c352823661695ae8f0537d9e5b4a8f8ec4a550712"
+    },
+    {
+      "classification": "input",
+      "format": "csv",
+      "path": "input/purchase_orders.csv",
+      "row_count": 40,
+      "sha256": "07899f519c64760ab8d9d754f1737160c2382804604f05c31e57673ee8f9aff1"
+    },
+    {
+      "classification": "input",
+      "format": "csv",
+      "path": "input/sku.csv",
+      "row_count": 24,
+      "sha256": "eb6fa0f84dc48fbd65d114936fa853ca66e4245ef89ff4f7a6f0cb78b2056517"
+    },
+    {
+      "classification": "input",
+      "format": "csv",
+      "path": "input/sku_substitution.csv",
+      "row_count": 2,
+      "sha256": "79a503575da62e8ae4d2416c6ed049e885e15139b64c065aacfacb9c1cbba27f"
+    },
+    {
+      "classification": "input",
+      "format": "csv",
+      "path": "input/sku_uom.csv",
+      "row_count": 48,
+      "sha256": "26341163cd8c682adeafedac2b3cb34d4690e4f691baef4ea70083fa92f16b71"
+    },
+    {
+      "classification": "input",
+      "format": "csv",
+      "path": "input/substitution_approval.csv",
+      "row_count": 1,
+      "sha256": "f5d834374efb3c4cb95a4dee33d27de3e40aca5212dd358e5c216e4e864e30a4"
+    },
+    {
+      "classification": "input",
+      "format": "csv",
+      "path": "input/supplier.csv",
+      "row_count": 8,
+      "sha256": "ef6334e42cd29422543cefa9de76d1c0eefe6a481898739e2b6b71c2be095b46"
+    },
+    {
+      "classification": "input",
+      "format": "csv",
+      "path": "input/supplier_capacity.csv",
+      "row_count": 48,
+      "sha256": "957ea1acb1a057329de81e501efbbbfe4b79956db0824397e6a857bdf3d9ce26"
+    },
+    {
+      "classification": "input",
+      "format": "csv",
+      "path": "input/supplier_lead_time.csv",
+      "row_count": 191,
+      "sha256": "cb4c2aa990dc9505edb4b74ce167be9ae1e9fafd8def909c9c721483ca9f3363"
+    },
+    {
+      "classification": "input",
+      "format": "csv",
+      "path": "input/supplier_site.csv",
+      "row_count": 8,
+      "sha256": "3832727128d138aac23512494e3d9a0781f9677f75c55feabe41bd089c4f4712"
+    },
+    {
+      "classification": "input",
+      "format": "csv",
+      "path": "input/supplier_sku.csv",
+      "row_count": 48,
+      "sha256": "326107e01a7dd996034fc246e86acaaf3c52bbae10de44b8a5eacfddf8c3581c"
+    },
+    {
+      "classification": "input",
+      "format": "csv",
+      "path": "input/unit_of_measure.csv",
+      "row_count": 6,
+      "sha256": "99c5a92abd28b8b880465749a65040719cb547414193e919c68aa9b3403d196e"
+    }
+  ],
+  "generator": "supplychain-planner-synthetic-data",
+  "generator_version": 1,
+  "profile": "demo52",
+  "seed": 20261022
+}
